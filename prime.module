@@ -2,7 +2,7 @@
 #!desc=Amazon Prime 解锁，移除 `amzn-app-ctxt` cookie
 
 [Script]
-AmazonPrime=type=http-request,pattern=^https?:\/\/www\.amazon\.com\/amazonprime\?.*$,requires-body=true,script-path=https://raw.githubusercontent.com/wufeichenxin/js/refs/heads/main/pm.js
+AmazonPrime=type=http-request,pattern=^https?:\/\/www\.amazon\.com\/(amazonprime\?.*|gp\/prime\/pipeline\/confirm\?.*)$,requires-body=true,script-path=https://raw.githubusercontent.com/wufeichenxin/js/refs/heads/main/pm.js
 
 [MITM]
 hostname= %APPEND% www.amazon.com
